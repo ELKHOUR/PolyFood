@@ -15,71 +15,33 @@
     <div class="menu-content">
 
 
+
+
+
+{% for card in cards %}
+
         <div class="box">
             <div class="box-content">
                 <div class="box-img">
-                    <img src="  {% static "./images/food.png" %} ">
+                    <img src="{{card.image.url}}">
                 </div>
 
                 <div class="box-text">
-                    <h4>Салат Цезарь</h4>
-                    <p>Приятного аппетита с и разнообразными хрустящими овощами, чтобы взорвать ваши вкусовые рецепторы.</p>
-                    <h6>₽ 63 <span class="salad-gram">/ 100г</span></h6>
+                    <h4>{{card.title}}</h4>
+                    <p>{{card.details}}</p>
+                    <h6>₽ {{card.price}}<span class="salad-gram">/ 100г</span></h6>
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="box-content">
-                <div class="box-img">
-                    <img src="  {% static "./images/food.png" %} ">
-                </div>
 
-                <div class="box-text">
-                    <h4>Салат Цезарь</h4>
-                    <p>Приятного аппетита с и разнообразными хрустящими овощами, чтобы взорвать ваши вкусовые рецепторы.</p>
-                    <h6>₽ 63 <span class="salad-gram">/ 100г</span></h6>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <div class="box-img">
-                    <img src="  {% static "./images/food.png" %} ">
-                </div>
+{% endfor %}
 
-                <div class="box-text">
-                    <h4>Салат Цезарь</h4>
-                    <p>Приятного аппетита с и разнообразными хрустящими овощами, чтобы взорвать ваши вкусовые рецепторы.</p>
-                    <h6>₽ 63 <span class="salad-gram">/ 100г</span></h6>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <div class="box-img">
-                    <img src="  {% static "./images/food.png" %} ">
-                </div>
 
-                <div class="box-text">
-                    <h4>Салат Цезарь</h4>
-                    <p>Приятного аппетита с и разнообразными хрустящими овощами, чтобы взорвать ваши вкусовые рецепторы.</p>
-                    <h6>₽ 63 <span class="salad-gram">/ 100г</span></h6>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-content">
-                <div class="box-img">
-                    <img src="  {% static "./images/food.png" %} ">
-                </div>
 
-                <div class="box-text">
-                    <h4>Салат Цезарь</h4>
-                    <p>Приятного аппетита с и разнообразными хрустящими овощами, чтобы взорвать ваши вкусовые рецепторы.</p>
-                    <h6>₽ 63 <span class="salad-gram">/ 100г</span></h6>
-                </div>
-            </div>
-        </div>
+
+
+
+
         <div class="box">
             <div class="box-content">
                 <div class="box-img">

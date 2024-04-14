@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'polyfood.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'polyfood',
+        'USER': 'postgres',  # Assuming the username is 'postgres'
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',  # Assuming the database is hosted locally
+        'PORT': '',  # Default PostgreSQL port
     }
 }
 
@@ -118,7 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,"media/")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
