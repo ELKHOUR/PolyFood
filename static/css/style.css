@@ -142,8 +142,11 @@ body{
 		height: auto;
 	}
 	.about{
-		grid-template-columns: 1fr;
-		grid-gap: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 6rem;
 	}
 	.about-text{
 		text-align: center;

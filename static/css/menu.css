@@ -76,7 +76,28 @@
 }
 
 .box-btn{
+	justify-content: center;
+	margin: 5rem  auto;
+	display: flex;
+	align-items: center;
+}
+#menu .box-btn a{
 	text-align: center;
-	margin-top: 5rem;
+	background-color: #318CE7;
+    border-radius: 30px;
+    color: white;
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	padding: 10px 28px;
+	font-weight: 700;
+	transition: all .35s ease;
+    border: 2px solid #318CE7;
 }
 
+
+#menu .box-btn a:hover{
+    background-color: white;
+	border: 2px solid #318CE7;
+    color: #318CE7;
+}

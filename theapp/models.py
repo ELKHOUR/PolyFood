@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.conf.global_settings import AUTH_USER_MODEL
+from django.forms import ValidationError
 # Create your models here.
 
 
@@ -21,3 +22,9 @@ class ChefModel(models.Model):
     def __str__(self):
         return self.name
     
+
+class Comments(models.Model):
+    content = models.TextField(max_length=255)
+    user = models.CharField(max_length=50)
+    created_at = models.DateTimeField(auto_now_add=True)
+

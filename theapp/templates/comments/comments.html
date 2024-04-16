@@ -1,43 +1,93 @@
 
+{% load i18n %}
+{% load humanize %}
 {% load static %}
 
-<link rel="stylesheet" href="{% static "css/comments.css" %} ">
-<link rel="stylesheet" href="{% static "css/style.css" %} ">
+
+<html>
+  <header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="{% static "css/comments.css" %}"/>
+  </header>
 
 
+<body>
+
+<section class='sectioncomment'>
+
+  <div class="center-text">
+    <h3>Comments</h3>
+    <h2>Students Opinions</h2>
+  </div>
 
 
-<section class="container comment" id="blog">
-    <div class="center-text">
-        <h2>комментарий</h2>
-    </div>
-    
-    <div class="comment-content">
+<section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list"> 
+
+
+      {% for comment in comments %}
+      
+			<li class="splide__slide">     
+        <div id='card' class="card mb-4" style="width:100%;">
+          <div class="card-body">
+            <h5 class="card-title">{{comment.user|capfirst}} ......</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary"> <i class="bi bi-clock"></i> {{comment.created_at|naturaltime}} </h6>
+            <p class="card-text">{{comment.content}}  </p>
+          </div>
+        </div>
+      </li>
+      {%empty%}
+
+      <div id='card' class="card mb-4" style="width:100%;">
+        <div class="card-body">
+          <h5 class="card-title"> Mahmoud-Elkhour ......</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"> <i class="bi bi-clock"></i> 1 day ago</h6>
+          <p class="card-text">  Write Your First Comment About Our Cafe  </p>
+        </div>
+      </div>
         
-        <div class="main">
-            <div class="comment-text">
-                <h6>Март 10, 2024</h6>
-                <h4>Anna Frolova</h4>
-                <p>Исключительный кулинарный опыт! Вкусы были идеально сбалансированы, и блюда были элегантно поданы.</p>
-            </div>
-        </div>
-
-
-        <div class="main">
-            <div class="comment-text">
-                <h6>Апрель 01, 2024</h6>
-                <h4>Mahmoud Elkhour</h4>
-                <p>Исключительный кулинарнdюда были элегантно поданы.</p>
-            </div>
-        </div>
-
-
-        <div class="main">
-            <div class="comment-text">
-                <h6>Апрель 11, 2024</h6>
-                <h4>Sergueï Markov</h4>
-                <p>Исключительный кулинарный опыт! Вкусы были идеально сбалансированы, и блюда были элегантно поданы.</p>
-            </div>
-        </div>
-    </div>
+    
+      {%endfor%}
+		</ul>
+  </div>
 </section>
+
+
+<a href="{% url "addcomment" %}">{% trans  'ADD COMMENT'%}</a>
+</section>
+
+
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide',{
+      type    : 'loop',
+      perPage : 2 ,
+      autoplay: true,
+      pagination : false,
+      focus: 'center',
+      interval: 2000,
+      breakpoints: {
+        700:{
+          perPage: 1
+        }
+      }
+    } );
+    splide.mount();
+  } );
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html> 
+
+
+
+

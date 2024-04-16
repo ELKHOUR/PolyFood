@@ -1,67 +1,84 @@
 
-.comment-content{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-	grid-gap: 2rem;
-	align-items: center;
-	margin-top: 6rem;
-	cursor: pointer;
-	border-radius: 20px;
-    margin-bottom: 5em;
+.sectioncomment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.main{
-	padding: 0px 0px 10px 0px;
-	border-radius: 20px;
-	box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
-	transition: all .40s ease;
+
+
+.splide{
+    width: 100%;
 }
-.comment-content img{
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 20px 20px 0px 0px;
+
+.splide__slide{
+    width: 100%;
+    padding: 20px;
 }
-.comment-text{
-	padding: 20px 15px;
+
+h5{
+    color: #318CE7;
+    font-size: 30px;
+    font-weight: 600;
 }
-.comment-text h6{
-	font-size: 13px;
-	font-weight: 400;
-	color: var(--other-color);
-	margin-bottom: 15px;
+
+
+.sectioncomment h1{
+    color: #318CE7;
+    font-weight: 800;
+    font-size: 55px;
 }
-.comment-text h4{
-	font-size: 19px;
-	line-height: 1.2;
-	font-weight: 700;
-	color: var(--text-color);
-	margin-bottom: 10px;
-	transition: all .30s ease;
+.card{
+    border: none;
+
+    border:  4px solid #318CE7;
+    border-radius: 30px;
 }
-.comment-text p{
-	font-size: var(--p-font);
-	color: var(--other-color);
-	font-weight: 400;
-	line-height: 30px;
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 20px;
+.card-body{
+    
+
+    height: 280px;
+    line-height: 30px;
 }
-.comment-btn{
+
+
+
+
+.sectioncomment h5{
+    color: #318CE7;
+    font-weight: 0;
+}
+
+.sectioncomment p{
+    color: #318CE7;
+    font-weight: 200;
+}
+.sectioncomment .card-subtitle{
+    margin: 15px 0px;
+}
+.sectioncomment a {
+    margin: auto;
+    text-decoration: none;
+    margin-top: 20px;
+    
+}
+
+
+.sectioncomment a{
+    background-color: #318CE7;
+    border-radius: 30px;
+    color: white;
 	display: flex;
 	align-items: center;
+	font-size: 1rem;
+	padding: 10px 28px;
+	font-weight: 700;
+	transition: all .35s ease;
+    border: 2px solid #318CE7;
 }
-.comment-btn a{
-	font-size: var(--p-font);
-	color: var(--main-color);
-	margin-right: 10px;
-}
-.comment-btn i{
-	font-size: 19px;
-	color: var(--main-color);
-}
-.comment-text h4:hover{
-	color: var(--bg-base);
-}
-.main:hover{
-	transform: scale(1.04) translateY(-5px);
+
+.sectioncomment a:hover{
+    background-color: white;
+	border: 2px solid #318CE7;
+    color: #318CE7;
 }

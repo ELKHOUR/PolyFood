@@ -54,12 +54,17 @@
 }
 
 .end-text{
-	text-align: center;
     background-color: #318ce715;
+	text-align:center;
 }
 .end-text p{
 	color: var(--other-color);
 	font-size: 15px;
 	letter-spacing: 2px;
 	padding: 20px;
+	margin-bottom: 0;
+}
+
+#contact a , .end-text a{
+	text-decoration: none;
 }
