@@ -59,11 +59,8 @@
 }
 
 .team-icon i:hover{
-	transform: scale(1.2);
 	background: var(--bg-base);
 	color: #fff;
 }
 
-.row:hover{
-	transform: scale(1.04) translateY(-5px);
-}
+

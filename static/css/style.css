@@ -82,23 +82,11 @@ body{
 	}
 	.navbar{
 		position: absolute;
-		top: -700px;
-		left: 0;
-		right: 0;
+		top: -300px;
 		flex-direction: column;
-		background: #fff;
-		align-items: flex-start;
-		box-shadow: 0px 0px 1px #13084982;
-		transition: all .40s ease;
+		transition: all .60s ease;
 	}
-	.navbar a{
-		display: block;
-		padding: 0.8rem;
-		margin: 0.5rem;
-	}
-	.navbar.open{
-		top: 100%;
-	}
+
 }
 
 @media (max-width: 1090px){
@@ -165,4 +153,5 @@ body{
 	.letter form{
 		width: 250px;
 	}
+
 }

@@ -1,3 +1,4 @@
+from django.db.models.query import QuerySet
 from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 from theapp.models import CardModel, ChefModel, Comments
@@ -21,6 +22,13 @@ class menuView(ListView):
     template_name = 'menu/allmenu.html'
     context_object_name = 'cards'
 
+    def get_queryset(self):
+        query_set = super().get_queryset()
+        where = {}
+        q = self.request.GET.get('q', None)
+        if q:
+            where['title__icontains'] = q
+        return query_set.filter(**where)
 
 
 

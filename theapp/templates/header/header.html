@@ -1,13 +1,15 @@
 {% load static %}
+{% load i18n %}
+
 
 <link rel="stylesheet" href="{% static "css/style.css" %} ">
 <link rel="stylesheet" href="{% static "css/home.css" %} ">
 
 <section class="container home" id="home">
     <div class="home-text">
-        <h3>Welcome</h3>
-        <h1>Наслаждайтесь органической едой</h1>
-        <p>Мы хотим, чтобы вы накопили в нашем ресторане, или мы приложили усилия, чтобы предложить вам исключительный кулинарный опыт в рамках запретных блюд.</p>
+        <h3> {% trans "Welcome" %} </h3>
+        <h1>{% trans "Enjoy organic food" %}</h1>
+        <p> {% trans "We want you to accumulate in our restaurant or we make efforts to offer you an exceptional culinary experience within the limits of forbidden dishes." %} </p>
     </div>
 
     <div class="home-img">

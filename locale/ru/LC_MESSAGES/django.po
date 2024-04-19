@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-20 00:00+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\theapp\templates\about\about.html:14
+#: .\theapp\templates\about\about.html:17
+#: .\theapp\templates\footer\footer.html:25
+#: .\theapp\templates\navbar\nav.html:19 .\theapp\templates\navbar\nav.html:46
+msgid "ABOUT US"
+msgstr "О НАС"
+
+#: .\theapp\templates\about\about.html:15
+msgid "Restaurant"
+msgstr "Ресторан"
+
+#: .\theapp\templates\about\about.html:16
+msgid ""
+"Explore our website to learn about our menu, hours of operation and special "
+"offers."
+msgstr ""
+"Посетите наш сайт, чтобы узнать о нашем меню, часах работы и специальных "
+"предложениях предложения."
+
+#: .\theapp\templates\about\about.html:16
+msgid ""
+"We look forward to serving you and providing you with a memorable dining "
+"experience every time you visit us."
+msgstr ""
+"Мы с нетерпением ждем возможности обслужить вас и обеспечить незабываемый "
+"ужин испытывайте каждый раз, когда вы посещаете нас."
+
+#: .\theapp\templates\comments\comments.html:21
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .\theapp\templates\comments\comments.html:22
+msgid "Students Opinions"
+msgstr "Мнения студентов"
+
+#: .\theapp\templates\comments\comments.html:65
+msgid "ADD COMMENT"
+msgstr "добавить комментарий"
+
+#: .\theapp\templates\footer\footer.html:10
+msgid "Connect With Us"
+msgstr "Связаться с нами"
+
+#: .\theapp\templates\footer\footer.html:23
+msgid "Menu Links"
+msgstr "Ссылки меню"
+
+#: .\theapp\templates\footer\footer.html:24
+#: .\theapp\templates\navbar\nav.html:16 .\theapp\templates\navbar\nav.html:43
+msgid "HOME"
+msgstr "ДОМ"
+
+#: .\theapp\templates\footer\footer.html:26
+#: .\theapp\templates\navbar\nav.html:18 .\theapp\templates\navbar\nav.html:45
+msgid "MENU"
+msgstr "МЕНЮ"
+
+#: .\theapp\templates\footer\footer.html:27
+#: .\theapp\templates\navbar\nav.html:17 .\theapp\templates\navbar\nav.html:44
+#: .\theapp\templates\team\team.html:12
+msgid "TEAM"
+msgstr "КОМАНДА"
+
+#: .\theapp\templates\footer\footer.html:28
+msgid "Blog"
+msgstr "Блог"
+
+#: .\theapp\templates\footer\footer.html:32
+msgid "Our Foods"
+msgstr "Наши продукты"
+
+#: .\theapp\templates\footer\footer.html:33
+msgid "Salads"
+msgstr "Салаты"
+
+#: .\theapp\templates\footer\footer.html:34
+msgid "First dish"
+msgstr "Первое блюдо"
+
+#: .\theapp\templates\footer\footer.html:35
+msgid "Beverages"
+msgstr "Напитки"
+
+#: .\theapp\templates\footer\footer.html:36
+msgid "Side dishes"
+msgstr "Гарнир"
+
+#: .\theapp\templates\footer\footer.html:40
+msgid "Nice to meet you"
+msgstr "Рад встрече"
+
+#: .\theapp\templates\header\header.html:10
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: .\theapp\templates\header\header.html:11
+msgid "Enjoy organic food"
+msgstr "Наслаждайтесь органической едой"
+
+#: .\theapp\templates\header\header.html:12
+msgid ""
+"We want you to accumulate in our restaurant or we make efforts to offer you "
+"an exceptional culinary experience within the limits of forbidden dishes."
+msgstr ""
+"Мы хотим, чтобы вы накопили в нашем ресторане, или мы прилагаем усилия, "
+"чтобы предложить вам исключительный кулинарный опыт в рамках запретных блюд."
+
+#: .\theapp\templates\menu\allmenu.html:14 .\theapp\templates\menu\menu.html:11
+msgid "Food Menu"
+msgstr "Меню еды"
+
+#: .\theapp\templates\menu\allmenu.html:15 .\theapp\templates\menu\menu.html:12
+msgid "Delicious food"
+msgstr "Вкусная еда"
+
+#: .\theapp\templates\menu\allmenu.html:23
+msgid "Search"
+msgstr "Поиск"
+
+#: .\theapp\templates\menu\allmenu.html:62
+msgid "We Dont Have This ......"
+msgstr "У нас этого нет....."
+
+#: .\theapp\templates\menu\allmenu.html:76
+#, fuzzy
+#| msgid "HOME"
+msgid "HOME "
+msgstr "ДОМ"
+
+#: .\theapp\templates\menu\menu.html:50
+msgid "All Categorys"
+msgstr "Все категории"
+
+#: .\theapp\templates\team\team.html:13
+msgid "Our Experience Chefs"
+msgstr "Наши опытные повара"
+
+#~ msgid "Home "
+#~ msgstr "ДОМ"

@@ -1,11 +1,9 @@
-
 .sectioncomment{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
 
 .splide{
     width: 100%;
@@ -16,41 +14,28 @@
     padding: 20px;
 }
 
-h5{
-    color: #318CE7;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-
 .sectioncomment h1{
     color: #318CE7;
     font-weight: 800;
     font-size: 55px;
 }
 .card{
-    border: none;
-
-    border:  4px solid #318CE7;
+    background-color: #318CE7;
     border-radius: 30px;
 }
 .card-body{
-    
-
     height: 280px;
     line-height: 30px;
 }
 
-
-
-
 .sectioncomment h5{
-    color: #318CE7;
-    font-weight: 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .sectioncomment p{
-    color: #318CE7;
+    color: #ffffff;;
     font-weight: 200;
 }
 .sectioncomment .card-subtitle{
@@ -62,7 +47,6 @@ h5{
     margin-top: 20px;
     
 }
-
 
 .sectioncomment a{
     background-color: #318CE7;

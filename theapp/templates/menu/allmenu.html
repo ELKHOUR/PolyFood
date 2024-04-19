@@ -11,8 +11,23 @@
 
 <section class="container menu" id="menu">
     <div class="center-text">
-        <h3>Food Menu</h3>
-        <h2>Delicious food</h2>
+        <h3>{% trans "Food Menu" %}</h3>
+        <h2>{% trans "Delicious food" %}</h2>
+
+        <form method="GET" action="{% url "menu" %}" class="d-flex mt-4" >
+        <div class="input-group">
+                <input
+                      type="text"
+                      name="q"
+                      class="form-control"
+                      placeholder="{% trans 'Search' %}"
+                      value="{{ request.GET.q}}"
+                />
+            <button class="btn btn-dark" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        </form>
     </div>
 
         <div class="menu-content">
@@ -28,13 +43,27 @@
                             </div>
 
                             <div class="box-text">
+                                {% if LANGUAGE_CODE == 'ru' %}
+                                <h4>{{card.title_ru}}</h4>
+                                <p>{{card.details_ru}}</p>
+                                {% else %}
                                 <h4>{{card.title}}</h4>
                                 <p>{{card.details}}</p>
+                                {% endif %}
                                 <h6>₽ {{card.price}}<span class="salad-gram">/ 100г</span></h6>
                             </div>
                         </div>
                     </div>
+            {%empty%}
 
+                <div class="box">
+                    <div class="box-content">
+                        
+                            <h4> {% trans "We Dont Have This ......" %} </h4>
+                            <i class="bi bi-emoji-frown-fill"></i>
+                        
+                    </div>
+                </div>
             {% endfor %}
 
 
@@ -44,7 +73,7 @@
 
     <div class="box-btn">
 
-        <a href=" {% url "home" %} " class="btn"> {% trans "Home " %} <i class="bi bi-arrow-right"></i> </a>
+        <a href=" {% url "home" %} " class="btn"> {% trans "HOME " %} <i class="bi bi-arrow-right"></i> </a>
     </div>
 </section>
 

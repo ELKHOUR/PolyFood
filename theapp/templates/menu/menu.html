@@ -8,8 +8,8 @@
 
 <section class="container menu" id="menu">
     <div class="center-text">
-        <h3>Food Menu</h3>
-        <h2>Delicious food</h2>
+        <h3>{% trans "Food Menu" %}</h3>
+        <h2>{% trans "Delicious food" %}</h2>
     </div>
 
         <div class="menu-content">
@@ -18,20 +18,27 @@
 
             {% for card in cards %}
 
-                    <div class="box">
+                    <div  class="box">
                         <div class="box-content">
                             <div class="box-img">
                                 <img src="{{card.image.url}}">
                             </div>
 
                             <div class="box-text">
+                                {% if LANGUAGE_CODE == 'ru' %}
+                                <h4>{{card.title_ru}}</h4>
+                                <p>{{card.details_ru}}</p>
+                                {% else %}
                                 <h4>{{card.title}}</h4>
                                 <p>{{card.details}}</p>
+                                {% endif %}
                                 <h6>₽ {{card.price}}<span class="salad-gram">/ 100г</span></h6>
                             </div>
                         </div>
                     </div>
 
+
+                    
             {% endfor %}
 
 

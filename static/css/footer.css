@@ -68,3 +68,8 @@
 #contact a , .end-text a{
 	text-decoration: none;
 }
+
+.logo_footer{
+	width: 180px;
+	margin-bottom: 20px;
+}
